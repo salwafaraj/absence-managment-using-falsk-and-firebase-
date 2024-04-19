@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition System</title>
+
+    <link
+      href="{{ url_for('static', filename='styles/index.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+
+
+  </head>
+  <body>
+    <h1 style="color: white;">Face Recognition System</h1>
+
+       <section class="attendance">
+
+
+        </section>
+
+    <form method="POST">
+
+
+
+
+    <div class="mainFrame">
+      <img src="{{url_for('video')}}" />
+    </div>
+
+  <div class="logout-container">
+
+        <a href="/admin" class="logout">
+              <i class="fas fa-sign-out-alt" style="color: blue;"></i>
+           <h5 style="color: #2691d9;">Home Page</h5>
+        </a>
+</div>
+  </body>
+</html>
